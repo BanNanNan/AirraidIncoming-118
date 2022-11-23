@@ -7,6 +7,6 @@ public class Pupillagertyp2attackProcedure {
 		if (entity == null)
 			return;
 		entity.getPersistentData().putDouble("DropDelay", 20);
-		entity.getPersistentData().putDouble("DropCount", (entity.getPersistentData().getDouble("DropCount") + 2));
+		entity.getPersistentData().putDouble("DropCount", (entity.getPersistentData().getDouble("DropCount") + 1));
 	}
 }
