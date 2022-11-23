@@ -1,0 +1,494 @@
+{
+  "mod_elements": [
+    {
+      "name": "Aa4headbase",
+      "type": "livingentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aa_4headbase",
+      "path": "~/AA 4Head"
+    },
+    {
+      "name": "Aa4headhead",
+      "type": "livingentity",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aa_4headhead",
+      "path": "~/AA 4Head"
+    },
+    {
+      "name": "Head4assemble",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "head_4assemble",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/AA 4Head"
+    },
+    {
+      "name": "Playerfacingtrackfor4head",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "playerfacingtrackfor_4head",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/AA 4Head"
+    },
+    {
+      "name": "Aahebullet",
+      "type": "livingentity",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aahebullet",
+      "path": "~/AA 4Head"
+    },
+    {
+      "name": "Aa4headplayerrightclick",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aa_4headplayerrightclick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/AA 4Head"
+    },
+    {
+      "name": "Keyshoot",
+      "type": "keybind",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "keyshoot",
+      "path": "~/AA 4Head"
+    },
+    {
+      "name": "Aa4headplayershootcancel",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aa_4headplayershootcancel",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/AA 4Head"
+    },
+    {
+      "name": "Bulletaddmotion",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bulletaddmotion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/AA 4Head"
+    },
+    {
+      "name": "Aaheintick",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aaheintick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/AA 4Head"
+    },
+    {
+      "name": "EntPillagerplanetype1",
+      "type": "livingentity",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pillagerplanetype_1",
+      "path": "~/pillager type1"
+    },
+    {
+      "name": "Pudpilgertyp1tick",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pudpilgertyp_1tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/pillager type1"
+    },
+    {
+      "name": "Pudpilgertyp1spawn",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pudpilgertyp_1spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/pillager type1"
+    },
+    {
+      "name": "Aiconditiontest",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aiconditiontest",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/pillager type1"
+    },
+    {
+      "name": "EntPillagerplanetype1npil",
+      "type": "livingentity",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ent_pillagerplanetype_1npil",
+      "path": "~/pillager type1"
+    },
+    {
+      "name": "Pupillagertyp1die",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pupillagertyp_1die",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/pillager type1"
+    },
+    {
+      "name": "PuPillagertyp1nopiltick",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pu_pillagertyp_1nopiltick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/pillager type1"
+    },
+    {
+      "name": "EntPillagerplanetype2",
+      "type": "livingentity",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ent_pillagerplanetype_2"
+    },
+    {
+      "name": "Pupillagertyp2tick",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pupillagertyp_2tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pupillagertyp2spawn",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pupillagertyp_2spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pupillagertyp2attack",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pupillagertyp_2attack",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/AA 4Head"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "entity.raidincoming.aa_4headbase": "Aa 4headbase",
+      "item.raidincoming.pillagerplanetype_1_spawn_egg": "Pillagerplanetype 1 Spawn Egg",
+      "entity.raidincoming.ent_pillagerplanetype_1npil": "Ent Pillagerplanetype 1npil",
+      "key.raidincoming.keyshoot": "Keyshoot",
+      "item.raidincoming.ent_pillagerplanetype_2_spawn_egg": "Ent Pillagerplanetype 2 Spawn Egg",
+      "item.raidincoming.aa_4headhead_spawn_egg": "Aa 4headhead Spawn Egg",
+      "entity.raidincoming.ent_pillagerplanetype_2": "Ent Pillagerplanetype 2",
+      "entity.raidincoming.aa_4headhead": "Aa 4headhead",
+      "entity.raidincoming.aahebullet": "Aahebullet",
+      "item.raidincoming.aahebullet_spawn_egg": "Aahebullet Spawn Egg",
+      "item.raidincoming.aa_4headbase_spawn_egg": "Aa 4headbase Spawn Egg",
+      "entity.raidincoming.pillagerplanetype_1": "Pillagerplanetype 1",
+      "item.raidincoming.ent_pillagerplanetype_1npil_spawn_egg": "Ent Pillagerplanetype 1npil Spawn Egg"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "pillager type1",
+        "children": []
+      },
+      {
+        "name": "AA 4Head",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "raidincoming",
+    "modName": "AirRaid Incoming",
+    "version": "1.0.0",
+    "author": "frukp, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.raidincoming",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200348217
+}

@@ -1,0 +1,15 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "LCONTROL",
+    "keyBindingName": "Keyshoot",
+    "keyBindingCategoryKey": "airraidincoming",
+    "onKeyPressed": {
+      "name": "Aa4headplayerrightclick"
+    },
+    "onKeyReleased": {
+      "name": "Aa4headplayershootcancel"
+    }
+  }
+}
