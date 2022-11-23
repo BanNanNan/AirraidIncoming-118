@@ -82,7 +82,7 @@ public class Pupillagertyp2tickProcedure {
 				if (_mcserv != null)
 					_mcserv.getPlayerList().broadcastMessage(new TextComponent("PlayerDetect"), ChatType.SYSTEM, Util.NIL_UUID);
 			}
-			Pupillagertyp2attackProcedure.execute(world, entity);
+			Pupillagertyp2attackProcedure.execute(entity);
 		}
 		entity.setDeltaMovement(new Vec3((entity.getLookAngle().x), (entity.getDeltaMovement().y()), (entity.getLookAngle().z)));
 	}
