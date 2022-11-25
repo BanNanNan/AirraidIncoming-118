@@ -414,6 +414,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -430,10 +434,33 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
-      },
-      "path": "~/AA 4Head"
+      }
+    },
+    {
+      "name": "Pupillagertyp2bomb",
+      "type": "livingentity",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pupillagertyp_2bomb"
     }
   ],
   "variable_elements": [],
@@ -443,9 +470,11 @@
       "entity.raidincoming.aa_4headbase": "Aa 4headbase",
       "item.raidincoming.pillagerplanetype_1_spawn_egg": "Pillagerplanetype 1 Spawn Egg",
       "entity.raidincoming.ent_pillagerplanetype_1npil": "Ent Pillagerplanetype 1npil",
+      "item.raidincoming.pupillagertyp_2bomb_spawn_egg": "Pupillagertyp 2bomb Spawn Egg",
       "key.raidincoming.keyshoot": "Keyshoot",
       "item.raidincoming.ent_pillagerplanetype_2_spawn_egg": "Ent Pillagerplanetype 2 Spawn Egg",
       "item.raidincoming.aa_4headhead_spawn_egg": "Aa 4headhead Spawn Egg",
+      "entity.raidincoming.pupillagertyp_2bomb": "Pupillagertyp 2bomb",
       "entity.raidincoming.ent_pillagerplanetype_2": "Ent Pillagerplanetype 2",
       "entity.raidincoming.aa_4headhead": "Aa 4headhead",
       "entity.raidincoming.aahebullet": "Aahebullet",

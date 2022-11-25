@@ -26,7 +26,7 @@ public class Pupillagertyp2tickProcedure {
 		{
 			Entity _ent = entity;
 			_ent.setYRot(entity.getYRot());
-			_ent.setXRot(75);
+			_ent.setXRot((float) 67.5);
 			_ent.setYBodyRot(_ent.getYRot());
 			_ent.setYHeadRot(_ent.getYRot());
 			_ent.yRotO = _ent.getYRot();
@@ -36,6 +36,7 @@ public class Pupillagertyp2tickProcedure {
 				_entity.yHeadRotO = _entity.getYRot();
 			}
 		}
+		entity.setDeltaMovement(new Vec3((entity.getLookAngle().x), (entity.getDeltaMovement().y()), (entity.getLookAngle().z)));
 		if (!((world.getBlockState(new BlockPos(
 				entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(30)),
 						ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getX(),
@@ -75,15 +76,19 @@ public class Pupillagertyp2tickProcedure {
 								.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(30)),
 										ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
 								.getBlockPos().getZ())),
-						4, 4, 4), e -> true)
-				.isEmpty() && entity.getPersistentData().getDouble("DropDelay") == 0 && entity.getPersistentData().getDouble("DropCount") != 4) {
+						16, 16, 16), e -> true)
+				.isEmpty() && entity.getPersistentData().getBoolean("Attacking") == false) {
+			entity.getPersistentData().putBoolean("Attacking", (true));
+		} else if (entity.getPersistentData().getDouble("DropDelay") == 0 && entity.getPersistentData().getDouble("DropCount") != 0
+				&& entity.getPersistentData().getBoolean("Attacking") == true) {
 			if (!world.isClientSide()) {
 				MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (_mcserv != null)
 					_mcserv.getPlayerList().broadcastMessage(new TextComponent("PlayerDetect"), ChatType.SYSTEM, Util.NIL_UUID);
 			}
-			Pupillagertyp2attackProcedure.execute(entity);
+			Pupillagertyp2attackProcedure.execute(world, x, y, z, entity);
+		} else if (entity.getPersistentData().getDouble("DropCount") == 0) {
+			entity.getPersistentData().putBoolean("Attacking", (false));
 		}
-		entity.setDeltaMovement(new Vec3((entity.getLookAngle().x), (entity.getDeltaMovement().y()), (entity.getLookAngle().z)));
 	}
 }

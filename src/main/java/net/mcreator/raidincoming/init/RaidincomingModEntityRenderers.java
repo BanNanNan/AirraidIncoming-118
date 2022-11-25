@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.mcreator.raidincoming.client.renderer.Pupillagertyp2bombRenderer;
 import net.mcreator.raidincoming.client.renderer.EntPillagerplanetype2Renderer;
 import net.mcreator.raidincoming.client.renderer.EntPillagerplanetype1npilRenderer;
 import net.mcreator.raidincoming.client.renderer.EntPillagerplanetype1Renderer;
@@ -26,5 +27,6 @@ public class RaidincomingModEntityRenderers {
 		event.registerEntityRenderer(RaidincomingModEntities.PILLAGERPLANETYPE_1.get(), EntPillagerplanetype1Renderer::new);
 		event.registerEntityRenderer(RaidincomingModEntities.ENT_PILLAGERPLANETYPE_1NPIL.get(), EntPillagerplanetype1npilRenderer::new);
 		event.registerEntityRenderer(RaidincomingModEntities.ENT_PILLAGERPLANETYPE_2.get(), EntPillagerplanetype2Renderer::new);
+		event.registerEntityRenderer(RaidincomingModEntities.PUPILLAGERTYP_2BOMB.get(), Pupillagertyp2bombRenderer::new);
 	}
 }

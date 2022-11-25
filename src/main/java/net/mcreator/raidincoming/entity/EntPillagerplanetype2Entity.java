@@ -98,7 +98,7 @@ public class EntPillagerplanetype2Entity extends Monster {
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason,
 			@Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		Pupillagertyp2spawnProcedure.execute(this);
+		Pupillagertyp2spawnProcedure.execute(world, this);
 		return retval;
 	}
 

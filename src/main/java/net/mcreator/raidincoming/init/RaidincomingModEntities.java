@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.raidincoming.entity.Pupillagertyp2bombEntity;
 import net.mcreator.raidincoming.entity.EntPillagerplanetype2Entity;
 import net.mcreator.raidincoming.entity.EntPillagerplanetype1npilEntity;
 import net.mcreator.raidincoming.entity.EntPillagerplanetype1Entity;
@@ -61,6 +62,11 @@ public class RaidincomingModEntities {
 					.setCustomClientFactory(EntPillagerplanetype2Entity::new)
 
 					.sized(1.2f, 1.2f));
+	public static final RegistryObject<EntityType<Pupillagertyp2bombEntity>> PUPILLAGERTYP_2BOMB = register("pupillagertyp_2bomb",
+			EntityType.Builder.<Pupillagertyp2bombEntity>of(Pupillagertyp2bombEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(Pupillagertyp2bombEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -75,6 +81,7 @@ public class RaidincomingModEntities {
 			EntPillagerplanetype1Entity.init();
 			EntPillagerplanetype1npilEntity.init();
 			EntPillagerplanetype2Entity.init();
+			Pupillagertyp2bombEntity.init();
 		});
 	}
 
@@ -86,5 +93,6 @@ public class RaidincomingModEntities {
 		event.put(PILLAGERPLANETYPE_1.get(), EntPillagerplanetype1Entity.createAttributes().build());
 		event.put(ENT_PILLAGERPLANETYPE_1NPIL.get(), EntPillagerplanetype1npilEntity.createAttributes().build());
 		event.put(ENT_PILLAGERPLANETYPE_2.get(), EntPillagerplanetype2Entity.createAttributes().build());
+		event.put(PUPILLAGERTYP_2BOMB.get(), Pupillagertyp2bombEntity.createAttributes().build());
 	}
 }
